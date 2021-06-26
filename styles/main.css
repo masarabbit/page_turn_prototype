@@ -1,0 +1,98 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #8b8b9c;
+  background: url('../assets/grid.png') repeat 0 0;
+}
+
+.wrapper {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.book {
+  position: absolute;
+  height: 440px;
+  width: calc(2000px / 3);
+  /* background-color: pink; */
+  border: red 1px  solid;
+  /* z-index: -20; */
+}
+
+.sign {
+  position: absolute;
+  color: rgb(3, 20, 78);
+  bottom: 10px;
+  right: 10px;
+  font-size: 10px;
+}
+
+a {
+  color: rgb(3, 20, 78);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.page_two {
+  /* border: white solid 1px; */
+  position: absolute;
+  top:0;
+  right:0;
+  height: 440px;
+  width: calc(1000px /3);
+
+  transition: 0.5s;
+
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 100%, 100% 100%, 0 100%);
+}
+
+.next_page {
+  position: absolute;
+  top:0;
+  right:0;
+  height: 440px;
+  width: calc(1000px /3);
+  background-color: red;
+  transition: 0.5s;
+  z-index: -2;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 100%, 100% 100%, 0 100%);
+}
+
+.cover {
+  position: absolute;
+  top:0;
+  right:0;
+  height: 440px;
+  width: calc(1000px / 3);
+  z-index: 20;
+  /* margin-top: -440px; */
+  background-color: rgba(0, 153, 255, 0.336);
+}
+
+img {
+  height: 100%;
+  width: auto;
+}
+
+.indicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+}
