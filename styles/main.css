@@ -29,6 +29,7 @@ body {
   /* background-color: pink; */
   border: red 1px  solid;
   /* z-index: -20; */
+  /* overflow: hidden; */
 }
 
 .sign {
@@ -62,6 +63,25 @@ a:hover {
   clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 100%, 100% 100%, 0 100%);
 }
 
+.page_two_back {
+  /* border: white solid 1px; */
+  position: absolute;
+  top:-200px;
+  left:calc((1000px / 3) + (1000px / 3));
+  height: 440px;
+  width: calc(1000px /3);
+
+  transition: 0.5s;
+  background-color: rgb(0, 255, 85);
+  z-index: 900;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 100%, 100% 100%, 0 100%);
+}
+
+.page_two_img {
+  transition: 0.5s;
+  transform-origin: 0%;
+}
+
 .next_page {
   position: absolute;
   top:0;
@@ -79,7 +99,7 @@ a:hover {
   top:0;
   right:0;
   height: 440px;
-  width: calc(1000px / 3);
+  width: calc(1000px / 1.5);
   z-index: 20;
   /* margin-top: -440px; */
   background-color: rgba(0, 153, 255, 0.336);
